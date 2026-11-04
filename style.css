@@ -1,0 +1,250 @@
+/* =========================
+   VARIABLES
+========================= */
+
+:root {
+    --bg: #080f1c;
+    --card: #101d30;
+    --card-light: #152740;
+
+    --blue: #2589ff;
+    --blue-light: #65b5ff;
+
+    --text: #e5edf7;
+    --text-muted: #9aadc3;
+
+    --border: rgba(101, 181, 255, 0.15);
+}
+
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    background: var(--bg);
+    color: var(--text);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    line-height: 1.8;
+    padding: 30px 15px;
+}
+
+
+/* =========================
+   CONTENEDOR PRINCIPAL
+========================= */
+
+.suii {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   TARJETAS
+========================= */
+
+.card {
+    background: var(--card);
+
+    border: 1px solid var(--border);
+    border-radius: 14px;
+
+    padding: 30px;
+    margin-bottom: 25px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+
+    transition: border-color 0.3s ease;
+}
+
+.card:hover {
+    border-color: var(--blue);
+}
+
+
+/* =========================
+   TITULOS
+========================= */
+
+h1 {
+    color: var(--blue-light);
+
+    font-size: 27px;
+    line-height: 1.4;
+
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+h2 {
+    color: var(--blue-light);
+
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   TEXTOS
+========================= */
+
+p {
+    color: var(--text-muted);
+
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+strong {
+    color: var(--blue-light);
+}
+
+span {
+    color: var(--blue-light);
+}
+
+
+/* =========================
+   LISTAS
+========================= */
+
+ul,
+ol {
+    padding-left: 20px;
+}
+
+li {
+    color: var(--text-muted);
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   IMAGEN
+========================= */
+
+img {
+    display: block;
+
+    max-width: 100%;
+    height: auto;
+
+    border-radius: 12px;
+    margin: 20px 0;
+
+    border: 1px solid var(--border);
+}
+
+
+/* =========================
+   SUJETOS
+========================= */
+
+.sujeto {
+    background: var(--card-light);
+
+    padding: 18px;
+    border-left: 3px solid var(--blue);
+
+    border-radius: 5px;
+
+    color: var(--text);
+}
+
+
+/* =========================
+   SEPARADORES
+========================= */
+
+hr {
+    border: none;
+
+    height: 1px;
+    background: var(--border);
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   ENLACES
+========================= */
+
+a {
+    text-decoration: none;
+    color: var(--blue-light);
+
+    transition: 0.3s ease;
+}
+
+a:hover {
+    color: white;
+}
+
+
+/* BOTÓN INICIO */
+
+.Pss {
+    display: inline-block;
+
+    background: var(--card-light);
+
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    padding: 10px 25px;
+
+    color: var(--blue-light);
+
+    transition: 0.3s ease;
+}
+
+.Pss:hover {
+    background: var(--blue);
+    color: white;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px 10px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 21px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+}
