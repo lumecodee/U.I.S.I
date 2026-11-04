@@ -221,9 +221,7 @@ a:hover {
 }
 
 
-/* =========================
-   RESPONSIVE
-========================= */
+
 
 @media (max-width: 600px) {
 
@@ -245,6 +243,113 @@ a:hover {
 
     p {
         font-size: 14px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 20px 12px;
+    }
+
+    .suii {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .card {
+        padding: 22px;
+        margin-bottom: 18px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 12px 8px;
+    }
+
+    .card {
+        padding: 17px;
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.7;
+        overflow-wrap: break-word;
+    }
+
+    span {
+        font-size: 14px;
+    }
+
+    img {
+        width: 90px;
+        height: auto;
+    }
+
+    ul,
+    ol {
+        padding-left: 18px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+
+    .sujeto {
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    .Pss {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 360px) {
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .card {
+        padding: 14px;
+    }
+
+    p {
+        font-size: 13px;
     }
 
 }
